@@ -21,3 +21,16 @@ alias sf='fasd -sif'     # interactive file selection
 alias z='fasd_cd -d'     # cd, same functionality as j in autojump
 alias zz='fasd_cd -d -i' # cd with interactive selection
 
+
+export NVM_DIR="/home/sjohnston/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+nvm use 5
+
+export JRE="/usr/local/java/jdk1.8.0_73/"
+
+export shell="zsh"
+
+PHRED_PARAMETER_FILE=/usr/local/etc/PhredPar/phredpar.dat
+export PHRED_PARAMETER_FILE
+
+export PATH=/usr/local/genome/bin:/opt/smartgit/bin:$PATH
