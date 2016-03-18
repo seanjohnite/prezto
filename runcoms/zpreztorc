@@ -37,11 +37,20 @@ zstyle ':prezto:load' pmodule \
   'node' \
   'syntax-highlighting' \
   'history-substring-search' \
+  'autosuggestions' \
   'prompt' 
 
 #
 # fasd
 #
+
+#
+# Autosuggestions
+#
+
+# Set the query found color.
+ zstyle ':prezto:module:autosuggestions' color 'yes'
+ zstyle ':prezto:module:autosuggestions:color' found 'green'
 
 #
 # Editor
@@ -130,7 +139,8 @@ zstyle ':prezto:module:prompt' theme 'pure'
    'main' \
    'brackets' \
    'pattern' \
-   'root'
+   'root' \
+   'line'
 #
 # Set syntax highlighting styles.
  zstyle ':prezto:module:syntax-highlighting' styles \
